@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.vetolib.subscriptionRequests.SubscriptionRequestsController"
+          fx:id="subscriptionPane"
+          prefHeight="400.0"
+          prefWidth="600.0"
+          maxHeight="Infinity"
+          maxWidth="Infinity">
+    <padding><Insets top="40" right="40" bottom="40" left="40"/></padding>
+    <children>
+        <VBox fx:id="Vbox"
+              alignment="CENTER"
+              spacing="5.0">
+            <children>
+                <fx:include source="VetolibMenu.fxml"
+                            fx:id="menuPane" />
+                <Label style="-fx-alignment: center; -fx-end-margin: 12"/>
+                <Label style="-fx-alignment: center; -fx-end-margin: 12"/>
+                <Label style="-fx-alignment: center; -fx-end-margin: 12"/>
+                <ListView fx:id="lv"
+                          style="-fx-alignment: center; -fx-end-margin: 12; -fx-font-size: 16px; -fx-faint-focus-color: transparent; -fx-focus-color: transparent;"/>
+            </children>
+        </VBox>
+    </children>
+</GridPane>
